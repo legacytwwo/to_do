@@ -1,0 +1,28 @@
+.main-layout {
+  @apply flex flex-col;
+  @apply justify-center items-center;
+  @apply w-[100%] h-[100%] bg-gray-200;
+
+  .layout-container {
+    @apply items-center;
+    @apply flex flex-row;
+    @apply w-[96%] h-[90%];
+    @apply rounded-[10px] bg-[#FFF];
+    @apply shadow-xl shadow-gray-300;
+
+    .layout-menu {
+      @apply flex flex-col;
+      @apply w-[300px] h-[96%];
+      @apply p-[10px] border-r;
+
+      &:deep(a) {
+        @apply uppercase;
+      }
+    }
+
+    .layout-slot {
+      @apply flex flex-col;
+      @apply w-[100%] h-[100%];
+    }
+  }
+}

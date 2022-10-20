@@ -1,0 +1,18 @@
+.list-products {
+  @apply p-[20px] m-[0px];
+  @apply flex flex-1 flex-col;
+
+  .toolbar {
+    @apply flex flex-row;
+    @apply w-[100%] h-[auto];
+    @apply mb-[20px] p-[0px]; 
+  }
+
+  .table-products {
+    @apply flex flex-1;
+  }
+}
+
+.create-btn {
+  @apply flex justify-end mb-[20px] mr-[20px]
+}

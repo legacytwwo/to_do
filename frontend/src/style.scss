@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+html, body, #app {
+  @apply flex flex-col;
+  @apply w-[100%] h-[100%];
+  @apply font-normal tracking-[0.7px];
+  font-family: 'Roboto', sans-serif ;
+}
+
+.n-input, .n-base-selection {
+  // border-radius: 9px !important;
+}
+
+.n-h {
+  margin: 0px !important;
+}
+
+
+
+.n-input, .n-base-selection {
+  @apply rounded-[8px] #{!important};
+}
+
+.n-form-item-label {
+  @apply pl-[5px] pb-[3px] #{!important};
+  @apply text-[11px] font-medium #{!important};
+}
+
+
+.n-data-table {
+  & > .n-data-table-wrapper {
+    @apply rounded-[10px] #{!important};
+  }
+  & .n-data-table-tr > td {
+    @apply text-[14px] text-[#555];
+  }
+  & .n-data-table-tr.disabled > td {
+    @apply bg-[#FAFAFC] text-[#999];
+  }
+}
+
+.n-card {
+  &.n-modal {
+    @apply rounded-[10px];
+  }
+
+  & > .n-card-header {
+    @apply pb-[0px] #{!important};
+
+    & > .n-card-header__extra {
+      @apply cursor-pointer;
+    }
+  }
+
+  & > .n-card__footer {
+    @apply p-[0px] #{!important};
+    @apply mx-[20px] #{!important};
+    @apply pb-[20px] #{!important};
+  }
+
+  & > .n-card-header, & > .n-card__content {
+    @apply px-[20px] #{!important};
+  }
+}
